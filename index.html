@@ -5,90 +5,21 @@
     <meta charset="UTF-8">
     <title>天气预报</title>
 </head>
-<style>
-    html {
-        height: 100%;
-    }
-    
-    body {
-        /*background-color: blue;*/
-        overflow: hidden;
-        height: 100%;
-        color: white;
-        background-image: linear-gradient( to bottom, dodgerblue, deepskyblue);
-    }
-    
-    p {
-        margin: 0px;
-    }
-    
-    #one {
-        font-size: 40px;
-        text-align: center;
-        margin-top: 15px;
-    }
-    
-    #two {
-        margin-top: 100px;
-        text-align: center;
-    }
-    
-    #three {
-        margin-top: 100px;
-        /*text-align: center;*/
-    }
-    
-    #a {
-        width: 33%;
-        float: left;
-        text-align: center;
-    }
-    
-    #b {
-        float: left;
-        text-align: center;
-        width: 33%;
-        border-left:solid 1px white;
-        border-right:solid 1px white;
-
-    }
-    
-    #c {
-        float: right;
-        text-align: center;
-        width: 33%;
-    }
-</style>
-
 <body>
-    <div id="one"> 江门</div>
-    <div id="two">
-        <img src="cloudy1.png" alt="">
-        <p>16~25℃</p>
-        <p>晴转多云</p>
-        <p>微风</p>
-        <p>实时温度20℃ 空气指数79 良</p>
-    </div>
-    <div id="three">
-        <section id="a">
-            <p>周三</p>
-            <img src="mist.png" alt="">
-            <p>16~32℃</p>
-            <p>雾</p>
-        </section>
-        <section id="b">
-            <p>周四</p>
-            <img src="overcast.png" alt="">
-            <p>16~32℃</p>
-            <p>多云</p>
-        </section>
-        <section id="c">
-            <p>周五</p>
-            <img src="lingxingxiaoyu.png" alt="">
-            <p>16~32℃</p>
-            <p>小雨</p>
-        </section>
-    </div>
+	<div id="weather-v2-plugin-standard"></div>
+	<script>
+	WIDGET = {
+	  CONFIG: {
+    	"layout": 1,
+    	"width": "400",
+    	"height": "130",
+    	"background": 1,
+    	"dataColor": "FFFFFF",
+    	"borderRadius": "10",
+    	"key": "jCti0e8DU5"
+  		}
+	}
+</script>
+<script src="https://apip.weatherdt.com/standard/static/js/weather-standard-common.js?v=2.0"></script>
 </body>
-
 </html>

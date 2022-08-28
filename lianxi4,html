@@ -1,10 +1,14 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>图像练习</title>
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>图像练习</title>
+</head>
+
+<body>
+    <p>haha</p>
+    <img src="./img/lianshi.jpg"/>
+</body>
+
 </html>

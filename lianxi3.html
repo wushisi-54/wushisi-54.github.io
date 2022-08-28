@@ -1,13 +1,70 @@
-<!DOCTYPE HTML >
+<!DOCTYPE HTML>
 <html>
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>表格练习</title>
+    <style type="text/css">
+        table,th,tr,td{border:1px solid rgb(2, 2, 2);}
+    </style>
 </head>
 
 <body>
-
+    <table>
+        <caption>期末成绩单</caption>
+        <thead>
+            <tr>
+                <th>科目</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>英语</th>
+                <th>物理</th>
+                <th>化学</th>
+                <th>体育</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>成绩</td>
+                <td>89</td>
+                <td>70</td>
+                <td>99</td>
+                <td>100</td>
+                <td>70</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <th>科目</th>
+                <th>思品</th>
+                <th>历史</th>
+                <th>地理</th>
+                <th>生物</th>
+                <th colspan="2">综合表现</th>
+            </tr>
+            <tr>
+                <td>成绩</td>
+                <td>89</td>
+                <td>70</td>
+                <td>99</td>
+                <td>100</td>
+                <td colspan="2">70</td>
+            </tr>
+            <tr>
+                <td colspan="3">期末成绩总分排名情况：6</td>
+                <td colspan="4">全班第2名，全校第32名</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="2">喜欢的东西</td>
+                <td colspan="6">练习册</td>
+            </tr>
+            <tr>
+                <td colspan="6">钢笔</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>

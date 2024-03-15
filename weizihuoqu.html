@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>获取用户位置</title>
+<script>
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        alert("您的浏览器不支持地理定位服务。");
+    }
+}
+
+function showPosition(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+
+    alert("您的纬度是：" + latitude + "，您的经度是：" + longitude);
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            alert("用户拒绝了地理定位请求。");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            alert("位置信息不可用。");
+            break;
+        case error.TIMEOUT:
+            alert("请求用户地理位置超时。");
+            break;
+        case error.UNKNOWN_ERROR:
+            alert("未知错误。");
+            break;
+    }
+}
+</script>
+</head>
+<body>
+
+<button onclick="getLocation()">获取我的位置</button>
+
+</body>
+</html>
+
